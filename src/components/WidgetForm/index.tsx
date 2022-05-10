@@ -1,31 +1,31 @@
-import bugImageUrl from '../../assets/bug.svg'
-import ideaImageUrl from '../../assets/idea.svg'
-import thoughtImageUrl from '../../assets/thought.svg'
+import bugImageUrl from "../../assets/bug.svg"
+import ideaImageUrl from "../../assets/idea.svg"
+import thoughtImageUrl from "../../assets/thought.svg"
 import { useState } from "react";
 import { FeedbackTypeStep } from "./Steps/FeedbackTypeStep";
 import { FeedbackContentStep } from "./Steps/FeedbackContentStep";
-import { FeedbackSuccessStep } from './Steps/FeedbackSuccessStep';
+import { FeedbackSuccessStep } from "./Steps/FeedbackSuccessStep";
 
 export const feedbackTypes = {
     BUG: {
-        title: 'Problema',
+        title: "Problema",
         image: {
             source: bugImageUrl,
-            alt: 'Imagem de um inseto'
+            alt: "Imagem de um inseto"
         }
     },
     IDEA: {
         title: "Ideia",
         image: {
             source: ideaImageUrl,
-            alt: 'Imagem de uma lâmpada'
+            alt: "Imagem de uma lâmpada"
         }
     },
     OTHER: {
         title: "Outro",
         image: {
             source: thoughtImageUrl,
-            alt: 'Imagem de um balão de pensamento'
+            alt: "Imagem de um balão de pensamento"
         }
     }
 }
